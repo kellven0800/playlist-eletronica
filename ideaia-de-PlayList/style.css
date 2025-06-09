@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000000;
+  color: #00bfff;
+  user-select: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: linear-gradient(145deg, #0a0a0a, #111111);
+  border-radius: 20px;
+  box-shadow:
+    0 0 15px #00bfff80,
+    inset 0 0 10px #004f8dcc;
+  border: 1px solid #00bfff99;
+}
+
+h1 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #00bfffaa;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00bfff44;
+  padding: 20px 25px;
+  border-radius: 15px;
+  background: #111a24;
+  box-shadow: 0 0 12px #00bfff55;
+}
+
+/* Esconder input file padrão */
+#trackFile {
+  display: none;
+}
+
+/* Botão personalizado para escolher arquivo */
+.custom-file-upload {
+  background-color: #000a1a;
+  border: 1px solid #005b9d;
+  color: #00bfff;
+  padding: 10px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+  user-select: none;
+  min-width: 220px;
+  text-align: center;
+  box-shadow:
+    0 0 5px #00bfffaa;
+}
+
+.custom-file-upload:hover,
+.custom-file-upload:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 0 15px #00bfffcc;
+}
+
+label {
+  min-width: 140px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #00bfffcc;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+select {
+  background-color: #000a1a;
+  border: 1px solid #005b9d;
+  color: #00bfff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+  min-width: 220px;
+}
+
+select:hover,
+select:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 0 10px #00bfffaa;
+}
+
+button {
+  background: linear-gradient(90deg, #00bfff, #0077cc);
+  border: none;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 15px #00bfff,
+    inset 0 0 8px #0099ee;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0077cc, #00bfff);
+  box-shadow:
+    0 0 25px #00bfffee,
+    inset 0 0 12px #00aaffcc;
+}
+
+.category-section {
+  margin-bottom: 35px;
+  border-left: 4px solid #00bfffaa;
+  padding-left: 15px;
+  text-shadow: 0 0 4px #00bfff88;
+}
+
+.category-section h2 {
+  color: #00bfffcc;
+  border-bottom: 2px solid #00bfffcc;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.track {
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  background: #001122cc;
+  border-radius: 14px;
+  box-shadow:
+    0 0 10px #00bfff55,
+    inset 0 0 6px #004080aa;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.track:hover {
+  background: #003366ee;
+  box-shadow:
+    0 0 20px #00d4ffdd,
+    inset 0 0 10px #0080ccff;
+}
+
+strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #00bfffdd;
+  text-shadow: 0 0 5px #00bfffbb;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  filter: drop-shadow(0 0 4px #00aaffcc);
+  border-radius: 8px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playlist Eletrônica Futurista</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Playlist Eletrônica Futurista</h1>
+
+    <form id="addTrackForm">
+      <label for="trackFile" class="custom-file-upload" tabindex="0" role="button" aria-label="Escolher música MP3">
+        Escolher música (MP3)
+      </label>
+      <input type="file" id="trackFile" accept="audio/mp3,audio/*" required />
+
+      <label for="categorySelect">Categoria:</label>
+      <select id="categorySelect" required>
+        <option value="" disabled selected>Escolha a categoria</option>
+        <option value="Trance">Trance</option>
+        <option value="Techno">Techno</option>
+        <option value="House">House</option>
+        <option value="Drum & Bass">Drum & Bass</option>
+        <option value="Dubstep">Dubstep</option>
+        <option value="Lo-Fi">Lo-Fi</option>
+        <option value="Progressive Chill">Progressive Chill</option>
+        <option value="Chillout">Chillout</option>
+        <option value="Outros">Outros</option>
+      </select>
+
+      <button type="submit">Adicionar Música</button>
+    </form>
+
+    <div id="playlistContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
